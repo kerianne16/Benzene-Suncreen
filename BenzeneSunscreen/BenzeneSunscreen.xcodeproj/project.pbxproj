@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		553E87992666A440000E0F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87982666A440000E0F12 /* AppDelegate.swift */; };
+		553E879B2666A440000E0F12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E879A2666A440000E0F12 /* SceneDelegate.swift */; };
+		553E879D2666A440000E0F12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E879C2666A440000E0F12 /* ViewController.swift */; };
+		553E87A02666A440000E0F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553E879E2666A440000E0F12 /* Main.storyboard */; };
+		553E87A22666A447000E0F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553E87A12666A447000E0F12 /* Assets.xcassets */; };
+		553E87A52666A447000E0F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553E87A32666A447000E0F12 /* LaunchScreen.storyboard */; };
+		553E87B02666A447000E0F12 /* BenzeneSunscreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87AF2666A447000E0F12 /* BenzeneSunscreenTests.swift */; };
+		553E87BB2666A447000E0F12 /* BenzeneSunscreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87BA2666A447000E0F12 /* BenzeneSunscreenUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		553E87AC2666A447000E0F12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 553E878D2666A440000E0F12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 553E87942666A440000E0F12;
+			remoteInfo = BenzeneSunscreen;
+		};
+		553E87B72666A447000E0F12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 553E878D2666A440000E0F12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 553E87942666A440000E0F12;
+			remoteInfo = BenzeneSunscreen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		553E87952666A440000E0F12 /* BenzeneSunscreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BenzeneSunscreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		553E87982666A440000E0F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		553E879A2666A440000E0F12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		553E879C2666A440000E0F12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		553E879F2666A440000E0F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		553E87A12666A447000E0F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		553E87A42666A447000E0F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		553E87A62666A447000E0F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		553E87AB2666A447000E0F12 /* BenzeneSunscreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BenzeneSunscreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		553E87AF2666A447000E0F12 /* BenzeneSunscreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzeneSunscreenTests.swift; sourceTree = "<group>"; };
+		553E87B12666A447000E0F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		553E87B62666A447000E0F12 /* BenzeneSunscreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BenzeneSunscreenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		553E87BA2666A447000E0F12 /* BenzeneSunscreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzeneSunscreenUITests.swift; sourceTree = "<group>"; };
+		553E87BC2666A447000E0F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		553E87922666A440000E0F12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553E87A82666A447000E0F12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553E87B32666A447000E0F12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		553E878C2666A440000E0F12 = {
+			isa = PBXGroup;
+			children = (
+				553E87972666A440000E0F12 /* BenzeneSunscreen */,
+				553E87AE2666A447000E0F12 /* BenzeneSunscreenTests */,
+				553E87B92666A447000E0F12 /* BenzeneSunscreenUITests */,
+				553E87962666A440000E0F12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		553E87962666A440000E0F12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				553E87952666A440000E0F12 /* BenzeneSunscreen.app */,
+				553E87AB2666A447000E0F12 /* BenzeneSunscreenTests.xctest */,
+				553E87B62666A447000E0F12 /* BenzeneSunscreenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		553E87972666A440000E0F12 /* BenzeneSunscreen */ = {
+			isa = PBXGroup;
+			children = (
+				553E87982666A440000E0F12 /* AppDelegate.swift */,
+				553E879A2666A440000E0F12 /* SceneDelegate.swift */,
+				553E879C2666A440000E0F12 /* ViewController.swift */,
+				553E879E2666A440000E0F12 /* Main.storyboard */,
+				553E87A12666A447000E0F12 /* Assets.xcassets */,
+				553E87A32666A447000E0F12 /* LaunchScreen.storyboard */,
+				553E87A62666A447000E0F12 /* Info.plist */,
+			);
+			path = BenzeneSunscreen;
+			sourceTree = "<group>";
+		};
+		553E87AE2666A447000E0F12 /* BenzeneSunscreenTests */ = {
+			isa = PBXGroup;
+			children = (
+				553E87AF2666A447000E0F12 /* BenzeneSunscreenTests.swift */,
+				553E87B12666A447000E0F12 /* Info.plist */,
+			);
+			path = BenzeneSunscreenTests;
+			sourceTree = "<group>";
+		};
+		553E87B92666A447000E0F12 /* BenzeneSunscreenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				553E87BA2666A447000E0F12 /* BenzeneSunscreenUITests.swift */,
+				553E87BC2666A447000E0F12 /* Info.plist */,
+			);
+			path = BenzeneSunscreenUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		553E87942666A440000E0F12 /* BenzeneSunscreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553E87BF2666A447000E0F12 /* Build configuration list for PBXNativeTarget "BenzeneSunscreen" */;
+			buildPhases = (
+				553E87912666A440000E0F12 /* Sources */,
+				553E87922666A440000E0F12 /* Frameworks */,
+				553E87932666A440000E0F12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BenzeneSunscreen;
+			productName = BenzeneSunscreen;
+			productReference = 553E87952666A440000E0F12 /* BenzeneSunscreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		553E87AA2666A447000E0F12 /* BenzeneSunscreenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553E87C22666A447000E0F12 /* Build configuration list for PBXNativeTarget "BenzeneSunscreenTests" */;
+			buildPhases = (
+				553E87A72666A447000E0F12 /* Sources */,
+				553E87A82666A447000E0F12 /* Frameworks */,
+				553E87A92666A447000E0F12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				553E87AD2666A447000E0F12 /* PBXTargetDependency */,
+			);
+			name = BenzeneSunscreenTests;
+			productName = BenzeneSunscreenTests;
+			productReference = 553E87AB2666A447000E0F12 /* BenzeneSunscreenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		553E87B52666A447000E0F12 /* BenzeneSunscreenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553E87C52666A447000E0F12 /* Build configuration list for PBXNativeTarget "BenzeneSunscreenUITests" */;
+			buildPhases = (
+				553E87B22666A447000E0F12 /* Sources */,
+				553E87B32666A447000E0F12 /* Frameworks */,
+				553E87B42666A447000E0F12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				553E87B82666A447000E0F12 /* PBXTargetDependency */,
+			);
+			name = BenzeneSunscreenUITests;
+			productName = BenzeneSunscreenUITests;
+			productReference = 553E87B62666A447000E0F12 /* BenzeneSunscreenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		553E878D2666A440000E0F12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Keri Levesque";
+				TargetAttributes = {
+					553E87942666A440000E0F12 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					553E87AA2666A447000E0F12 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 553E87942666A440000E0F12;
+					};
+					553E87B52666A447000E0F12 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 553E87942666A440000E0F12;
+					};
+				};
+			};
+			buildConfigurationList = 553E87902666A440000E0F12 /* Build configuration list for PBXProject "BenzeneSunscreen" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 553E878C2666A440000E0F12;
+			productRefGroup = 553E87962666A440000E0F12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				553E87942666A440000E0F12 /* BenzeneSunscreen */,
+				553E87AA2666A447000E0F12 /* BenzeneSunscreenTests */,
+				553E87B52666A447000E0F12 /* BenzeneSunscreenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		553E87932666A440000E0F12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553E87A52666A447000E0F12 /* LaunchScreen.storyboard in Resources */,
+				553E87A22666A447000E0F12 /* Assets.xcassets in Resources */,
+				553E87A02666A440000E0F12 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553E87A92666A447000E0F12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553E87B42666A447000E0F12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		553E87912666A440000E0F12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553E879D2666A440000E0F12 /* ViewController.swift in Sources */,
+				553E87992666A440000E0F12 /* AppDelegate.swift in Sources */,
+				553E879B2666A440000E0F12 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553E87A72666A447000E0F12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553E87B02666A447000E0F12 /* BenzeneSunscreenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553E87B22666A447000E0F12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553E87BB2666A447000E0F12 /* BenzeneSunscreenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		553E87AD2666A447000E0F12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 553E87942666A440000E0F12 /* BenzeneSunscreen */;
+			targetProxy = 553E87AC2666A447000E0F12 /* PBXContainerItemProxy */;
+		};
+		553E87B82666A447000E0F12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 553E87942666A440000E0F12 /* BenzeneSunscreen */;
+			targetProxy = 553E87B72666A447000E0F12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		553E879E2666A440000E0F12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				553E879F2666A440000E0F12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		553E87A32666A447000E0F12 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				553E87A42666A447000E0F12 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		553E87BD2666A447000E0F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		553E87BE2666A447000E0F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		553E87C02666A447000E0F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BenzeneSunscreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BenzeneSunscreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		553E87C12666A447000E0F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BenzeneSunscreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BenzeneSunscreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		553E87C32666A447000E0F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BenzeneSunscreenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BenzeneSunscreenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BenzeneSunscreen.app/BenzeneSunscreen";
+			};
+			name = Debug;
+		};
+		553E87C42666A447000E0F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BenzeneSunscreenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BenzeneSunscreenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BenzeneSunscreen.app/BenzeneSunscreen";
+			};
+			name = Release;
+		};
+		553E87C62666A447000E0F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BenzeneSunscreenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BenzeneSunscreenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BenzeneSunscreen;
+			};
+			name = Debug;
+		};
+		553E87C72666A447000E0F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BenzeneSunscreenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BenzeneSunscreenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BenzeneSunscreen;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		553E87902666A440000E0F12 /* Build configuration list for PBXProject "BenzeneSunscreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553E87BD2666A447000E0F12 /* Debug */,
+				553E87BE2666A447000E0F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553E87BF2666A447000E0F12 /* Build configuration list for PBXNativeTarget "BenzeneSunscreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553E87C02666A447000E0F12 /* Debug */,
+				553E87C12666A447000E0F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553E87C22666A447000E0F12 /* Build configuration list for PBXNativeTarget "BenzeneSunscreenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553E87C32666A447000E0F12 /* Debug */,
+				553E87C42666A447000E0F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553E87C52666A447000E0F12 /* Build configuration list for PBXNativeTarget "BenzeneSunscreenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553E87C62666A447000E0F12 /* Debug */,
+				553E87C72666A447000E0F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 553E878D2666A440000E0F12 /* Project object */;
+}
