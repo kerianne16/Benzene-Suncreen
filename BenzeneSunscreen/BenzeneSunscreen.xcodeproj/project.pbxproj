@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		553E87992666A440000E0F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87982666A440000E0F12 /* AppDelegate.swift */; };
 		553E879B2666A440000E0F12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E879A2666A440000E0F12 /* SceneDelegate.swift */; };
-		553E879D2666A440000E0F12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E879C2666A440000E0F12 /* ViewController.swift */; };
 		553E87A02666A440000E0F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553E879E2666A440000E0F12 /* Main.storyboard */; };
 		553E87A22666A447000E0F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553E87A12666A447000E0F12 /* Assets.xcassets */; };
 		553E87A52666A447000E0F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553E87A32666A447000E0F12 /* LaunchScreen.storyboard */; };
@@ -39,7 +38,6 @@
 		553E87952666A440000E0F12 /* BenzeneSunscreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BenzeneSunscreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		553E87982666A440000E0F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		553E879A2666A440000E0F12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		553E879C2666A440000E0F12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		553E879F2666A440000E0F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		553E87A12666A447000E0F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		553E87A42666A447000E0F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,14 +99,13 @@
 		553E87972666A440000E0F12 /* BenzeneSunscreen */ = {
 			isa = PBXGroup;
 			children = (
+				553E879E2666A440000E0F12 /* Main.storyboard */,
+				553E87A32666A447000E0F12 /* LaunchScreen.storyboard */,
 				553E87982666A440000E0F12 /* AppDelegate.swift */,
 				553E879A2666A440000E0F12 /* SceneDelegate.swift */,
-				553E879C2666A440000E0F12 /* ViewController.swift */,
-				553E879E2666A440000E0F12 /* Main.storyboard */,
 				553E87A12666A447000E0F12 /* Assets.xcassets */,
-				553E87A32666A447000E0F12 /* LaunchScreen.storyboard */,
 				553E87A62666A447000E0F12 /* Info.plist */,
-				553E87C82666B0FA000E0F12 /* sunscreens.json */,
+				553E87CB26694F33000E0F12 /* Data */,
 			);
 			path = BenzeneSunscreen;
 			sourceTree = "<group>";
@@ -129,6 +126,14 @@
 				553E87BC2666A447000E0F12 /* Info.plist */,
 			);
 			path = BenzeneSunscreenUITests;
+			sourceTree = "<group>";
+		};
+		553E87CB26694F33000E0F12 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				553E87C82666B0FA000E0F12 /* sunscreens.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				553E879D2666A440000E0F12 /* ViewController.swift in Sources */,
 				553E87992666A440000E0F12 /* AppDelegate.swift in Sources */,
 				553E879B2666A440000E0F12 /* SceneDelegate.swift in Sources */,
 			);
