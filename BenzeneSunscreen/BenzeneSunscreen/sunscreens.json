@@ -1,0 +1,178 @@
+
+[
+
+    {
+        "brandName": "Neutrogena",
+        "type": "Spray",
+        "description": "Ultra Sheer Weightless Sunscreen Spray, SPF 100+",
+        "spf": "100+",
+        "upc": "086800100416",
+        "lot": "04820E04",
+        "expiration": "2022-01",
+        "activePharmaceuticalIngredients": "Avobenzone 3%, Homosalate 15%, Octisalate 5%, Octocrylene 10%, Oxybenzone 6%",
+        "benzeneAvgPpm": "6.26, 6.77*",
+        "percent": "7%"
+    },
+    {
+        "brandName": "Neutrogena",
+        "type": "Spray",
+        "description": "Ultra Sheer Weightless Sunscreen Spray, SPF 70",
+        "spf": "70",
+        "upc": "086800100409",
+        "lot": "07020E01",
+        "expiration": "2023-02",
+        "activePharmaceuticalIngredients": "Avobenzone 3%, Homosalate 15%, Octisalate 5%, Octocrylene 4%, Oxybenzone 6%",
+        "benzeneAvgPpm": "5.96",
+        "percent": "7%"
+    },
+    {
+        "brandName": "Neutrogena",
+        "type": "Spray",
+        "description": "Ultra Sheer Weightless Sunscreen Spray, SPF 70",
+        "spf": "70",
+        "upc": "086800100409",
+        "lot": "06920E01",
+        "expiration": "2023-02",
+        "activePharmaceuticalIngredients": "Avobenzone 3%, Homosalate 15%, Octisalate 5%, Octocrylene 4%, Oxybenzone 6%",
+        "benzeneAvgPpm": "5.76",
+        "percent":  "5%"
+    },
+    {
+        "brandName": "Sun Bum",
+        "type": "Gel",
+        "description": "Cool Down Gel",
+        "spf": "N/A",
+        "upc": "871760002005",
+        "lot": "S0082C",
+        "expiration": "--",
+        "activePharmaceuticalIngredients": "N/A (Cosmetic Product)",
+        "benzeneAvgPpm": "5.33, 5.49*",
+        "percent":  "3%"
+    },
+    {
+        "brandName": "Neutrogena",
+        "type": "Spray",
+        "description": "Ultra Sheer Weightless Sunscreen Spray, SPF 70",
+        "spf": "70",
+        "upc": "086800100409",
+        "lot": "02320E01",
+        "expiration": "2022-12",
+        "activePharmaceuticalIngredients": " Avobenzone 3%, Homosalate 15%, Octisalate 5%, Octocrylene 4%, Oxybenzone 6%",
+        "benzeneAvgPpm": "5.30",
+        "percent":  "2%"
+    },
+    {
+        "brandName": "Neutrogena",
+        "type": "Spray",
+        "description": "Beach Defense Oil-Free Body Sunscreen Spray - SPF 100",
+        "spf": "100",
+        "upc": " 086800101444",
+        "lot": "04721E02",
+        "expiration": "2023-01",
+        "activePharmaceuticalIngredients": "Avobenzone 3%, Homosalate 15%, Octisalate 5%, Octocrylene 10%, Oxybenzone 6%",
+        "benzeneAvgPpm": "5.20, 5.59*",
+        "percent":  "5%"
+    },
+    {
+        
+        "brandName": "CVS Health",
+        "type": "Spray",
+        "description": "After-sunAloe Vera Soothing Spray",
+        "spf": "N/A",
+        "upc": "050428390832",
+        "lot": "8140449A",
+        "expiration": "--",
+        "activePharmaceuticalIngredients": "N/A (Cosmetic Product)",
+        "benzeneAvgPpm": "4.71, 4.55*",
+        "percent":  "1%"
+    },
+    {
+        "brandName": "Neutrogena",
+        "type": "Spray",
+        "description": "Invisible Daily Defense Body Sunscreen Broad Spectrum SPF60+",
+        "spf": "60+",
+        "upc": "086800111542",
+        "lot": "04921E01",
+        "expiration": "2024-01",
+        "activePharmaceuticalIngredients": "Avobenzone 3%, Homosalate 10%, Octisalate 5%, Octocrylene 10%",
+        "benzeneAvgPpm": "4.65, 5.27*",
+        "percent":  "4%"
+    },
+    {
+        "brandName": "Neutrogena",
+        "type": "Spray",
+        "description": "Ultra Sheer Weightless Sunscreen Spray, SPF 100+",
+        "spf": "100+",
+        "upc": "086800100416",
+        "lot": "03120E02",
+        "expiration": "2021-12",
+        "activePharmaceuticalIngredients": "Avobenzone 3%, Homosalate 15%, Octisalate 5%, Octocrylene 10%, Oxybenzone 6%",
+        "benzeneAvgPpm": "4.11, 6.00*",
+        "percent":  "15%"
+    },
+    {
+        "brandName": "Neutrogena",
+        "type": "Spray",
+        "description": "Beach Defense Oil-Free Body Sunscreen Spray - SPF 100",
+        "spf": "100",
+        "upc": "086800101444",
+        "lot": "28020E01",
+        "expiration": "2022-09",
+        "activePharmaceuticalIngredients": "Avobenzone 3%, Homosalate 15%, Octisalate 5%, Octocrylene 10%, Oxybenzone 6%",
+        "benzeneAvgPpm": "4.01, 4.00*",
+        "percent":  "4%"
+    },
+    {
+        "brandName": "CVS Health",
+        "type": "Spray",
+        "description": "After-sunAloe Vera Soothing Spray",
+        "spf": "N/A",
+        "upc": "050428390832",
+        "lot": "4111849A",
+        "expiration": "--",
+        "activePharmaceuticalIngredients": "N/A (Cosmetic Product)",
+        "benzeneAvgPpm": "3.58, 3.93*",
+        "percent":  "4%"
+    },
+    {
+        "brandName": "Neutrogena",
+        "type": "Spray",
+        "description": "Beach Defense Spray Body Sunscreen SPF 50",
+        "spf": "50",
+        "upc": "086800112549",
+        "lot": "25520E01",
+        "expiration": "2023-08",
+        "activePharmaceuticalIngredients": "Avobenzone 3%, Homosalate 10%, Octisalate 5%, Octocrylene 10%",
+        "benzeneAvgPpm": "3.52, 3.71*",
+        "percent":  "3%"
+    },
+    {
+        "brandName": "Neutrogena",
+        "type": "Spray",
+        "description": "Beach Defense Oil-Free Body Sunscreen Spray - SPF 100",
+        "spf": "100",
+        "upc": "086800101444",
+        "lot": "31420E04",
+        "expiration": "2022-10",
+        "activePharmaceuticalIngredients": "Avobenzone 3%, Homosalate 15%, Octisalate 5%, Octocrylene 10%, Oxybenzone 6%",
+        "benzeneAvgPpm": "3.08, 2.64*",
+        "percent":  "2%"
+    },
+    {
+        "brandName": "Fruit of the Earth",
+        "type": "Gel",
+        "description": "Gel Aloe Vera Gel",
+        "spf": "N/A",
+        "upc": "071661001200",
+        "lot": "6612940A",
+        "expiration": "--",
+        "activePharmaceuticalIngredients": "N/A (Cosmetic Product)",
+        "benzeneAvgPpm": "2.78, 2.94*",
+        "percent":  "6%"
+    },
+    {
+        
+    }
+        
+
+

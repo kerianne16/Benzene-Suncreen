@@ -15,6 +15,7 @@
 		553E87A52666A447000E0F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553E87A32666A447000E0F12 /* LaunchScreen.storyboard */; };
 		553E87B02666A447000E0F12 /* BenzeneSunscreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87AF2666A447000E0F12 /* BenzeneSunscreenTests.swift */; };
 		553E87BB2666A447000E0F12 /* BenzeneSunscreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87BA2666A447000E0F12 /* BenzeneSunscreenUITests.swift */; };
+		553E87C92666B0FA000E0F12 /* sunscreens.json in Resources */ = {isa = PBXBuildFile; fileRef = 553E87C82666B0FA000E0F12 /* sunscreens.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		553E87B62666A447000E0F12 /* BenzeneSunscreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BenzeneSunscreenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		553E87BA2666A447000E0F12 /* BenzeneSunscreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzeneSunscreenUITests.swift; sourceTree = "<group>"; };
 		553E87BC2666A447000E0F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		553E87C82666B0FA000E0F12 /* sunscreens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sunscreens.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				553E87A12666A447000E0F12 /* Assets.xcassets */,
 				553E87A32666A447000E0F12 /* LaunchScreen.storyboard */,
 				553E87A62666A447000E0F12 /* Info.plist */,
+				553E87C82666B0FA000E0F12 /* sunscreens.json */,
 			);
 			path = BenzeneSunscreen;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				553E87C92666B0FA000E0F12 /* sunscreens.json in Resources */,
 				553E87A52666A447000E0F12 /* LaunchScreen.storyboard in Resources */,
 				553E87A22666A447000E0F12 /* Assets.xcassets in Resources */,
 				553E87A02666A440000E0F12 /* Main.storyboard in Resources */,
