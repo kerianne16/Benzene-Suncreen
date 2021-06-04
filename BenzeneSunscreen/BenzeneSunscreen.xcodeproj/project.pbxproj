@@ -15,6 +15,7 @@
 		553E87B02666A447000E0F12 /* BenzeneSunscreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87AF2666A447000E0F12 /* BenzeneSunscreenTests.swift */; };
 		553E87BB2666A447000E0F12 /* BenzeneSunscreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87BA2666A447000E0F12 /* BenzeneSunscreenUITests.swift */; };
 		553E87C92666B0FA000E0F12 /* sunscreens.json in Resources */ = {isa = PBXBuildFile; fileRef = 553E87C82666B0FA000E0F12 /* sunscreens.json */; };
+		553E87CE266A7B67000E0F12 /* Sunscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87CD266A7B66000E0F12 /* Sunscreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		553E87BA2666A447000E0F12 /* BenzeneSunscreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzeneSunscreenUITests.swift; sourceTree = "<group>"; };
 		553E87BC2666A447000E0F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		553E87C82666B0FA000E0F12 /* sunscreens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sunscreens.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		553E87CD266A7B66000E0F12 /* Sunscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sunscreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		553E87972666A440000E0F12 /* BenzeneSunscreen */ = {
 			isa = PBXGroup;
 			children = (
+				553E87CC266A7B49000E0F12 /* Model */,
 				553E879E2666A440000E0F12 /* Main.storyboard */,
 				553E87A32666A447000E0F12 /* LaunchScreen.storyboard */,
 				553E87982666A440000E0F12 /* AppDelegate.swift */,
@@ -134,6 +137,14 @@
 				553E87C82666B0FA000E0F12 /* sunscreens.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		553E87CC266A7B49000E0F12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				553E87CD266A7B66000E0F12 /* Sunscreen.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				553E87CE266A7B67000E0F12 /* Sunscreen.swift in Sources */,
 				553E87992666A440000E0F12 /* AppDelegate.swift in Sources */,
 				553E879B2666A440000E0F12 /* SceneDelegate.swift in Sources */,
 			);

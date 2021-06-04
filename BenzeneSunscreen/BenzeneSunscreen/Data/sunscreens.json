@@ -171,8 +171,184 @@
         "percent":  "6%"
     },
     {
-        
+        "brandName": "Neutrogena",
+        "type": "Spray",
+        "description": "Invisible Daily Defense Body Sunscreen Broad Spectrum SPF 60+",
+        "spf": "60+",
+        "upc": "086800111542",
+        "lot": "17820E01",
+        "expiration": "2023-05",
+        "activePharmaceuticalIngredients": "Avobenzone 3%, Homosalate 10%, Octisalate 5%, Octocrylene 10%",
+        "benzeneAvgPpm": "1.99, 1.66*",
+        "percent":  "8%"
+    },
+    {
+        "brandName": "Neutrogena",
+        "type": "Spray",
+        "description": "Ultra Sheer Weightless Sunscreen Spray, SPF 100+",
+        "spf": "100+",
+        "upc": "086800100416",
+        "lot": "06420E05",
+        "expiration": "2022-02",
+        "activePharmaceuticalIngredients": "Avobenzone 3%, Homosalate 15%, Octisalate 5%,Octocrylene 10%, Oxybenzone 6%",
+        "benzeneAvgPpm": "1.44, 1.06*",
+        "percent":  "6%"
+    },
+    {
+        "brandName": "Raw Elements",
+        "type": "Lotion",
+        "description": "Eco Formula Sunscreen Lotion SPF 30",
+        "spf": "30",
+        "upc": "858855002003",
+        "lot": "58J19",
+        "expiration": "2021-07",
+        "activePharmaceuticalIngredients": "Zinc Oxide 23%",
+        "benzeneAvgPpm": "1.35, 1.31*",
+        "percent":  "9%"
+    },
+    {
+        "brandName": "CVS Health",
+        "type": "Spray",
+        "description": "After-sun Aloe Vera Soothing Spray",
+        "spf": "N/A",
+        "upc": "050428390832",
+        "lot": "1101990A",
+        "expiration": "--",
+        "activePharmaceuticalIngredients": "N/A (Cosmetic Product)",
+        "benzeneAvgPpm": "0.90, 1.04*",
+        "percent":  "3%"
+    },
+    {
+        "brandName": "Neutrogena",
+        "type": "Spray",
+        "description": "Ultra Sheer Weightless Sunscreen Spray, SPF 70",
+        "spf": "70",
+        "upc": "086800100409",
+        "lot": "26119E01",
+        "expiration": "2022-08",
+        "activePharmaceuticalIngredients": "Avobenzone 3%, Homosalate 15%, Octisalate 5%, Octocrylene 4%, Oxybenzone 6%",
+        "benzeneAvgPpm": "0.87",
+        "percent":  "9%"
+    },
+    {
+        "brandName": "CVS Health",
+        "type": "Gel",
+        "description": "After-sun Aloe Vera Moisturizing Gel",
+        "spf": "N/A",
+        "upc": "050428324837",
+        "lot": "4500231A",
+        "expiration": "--",
+        "activePharmaceuticalIngredients": "N/A (Cosmetic Product)",
+        "benzeneAvgPpm": "0.81",
+        "percent":  "2%"
+    },
+    {
+        "brandName": "Neutrogena",
+        "type": "Spray",
+        "description": "Ultra Sheer Weightless Sunscreen Spray, SPF 100+",
+        "spf": "100+",
+        "upc": "086800100416",
+        "lot": "08119F36",
+        "expiration": "2022-02",
+        "activePharmaceuticalIngredients": "Avobenzone 3%, Homosalate 15%, Octisalate 5%, Octocrylene 10%, Oxybenzone 6%",
+        "benzeneAvgPpm": "0.77",
+        "percent":  "4%"
     }
-        
 
-
+Neutrogena Spray Ultra Sheer Weightless Sunscreen
+Spray, SPF 100+
+100+ 086800100416 08119F36 2022-02 Avobenzone 3%, Homosalate 15%, Octisalate 5%,
+Octocrylene 10%, Oxybenzone 6%
+0.77 4%
+SunBurnt Gel Advanced After-Sun Gel N/A 324330210060 62R20 2022-12 N/A (Cosmetic Product) 0.75
+0.87*
+2%
+Neutrogena Spray Ultra Sheer Weightless Sunscreen
+Spray, SPF 100+
+100+ 086800100416 32619E06 2021-10 Avobenzone 3%, Homosalate 15%, Octisalate 5%,
+Octocrylene 10%, Oxybenzone 6%
+0.73 9%
+Goodsense Lotion Sunscreen Lotion SPF 30 30 846036001143 070606920 2022-07 Avobenzone 3%, Homosalate 10%, Octisalate 5%,
+Octocrylene 10%
+0.71 4%
+Neutrogena Spray CoolDry Sport Water-Resistant
+Sunscreen Spray SPF 70
+70 086800100379 33719E01 2022-10 Avobenzone 3%, Homosalate 15%, Octisalate 5%,
+Octocrylene 4%, Oxybenzone 6%
+0.66 5%
+Neutrogena Spray Ultra Sheer Body Mist Sunscreen
+Broad Spectrum SPF 30 Spray
+30 086800100386 28219E02 2021-09 Avobenzone 3%, Homosalate 8%, Octisalate 5%,
+Octocrylene 8%
+0.49 18%
+Banana Boat Spray Kids Max Protect & Play Sunscreen CSpray SPF 100
+100 079656050820 200910346 2023-02 Avobenzone 3%, Homosalate 10%, Octisalate 5%,
+Octocrylene 10%, Oxybenzone 6%
+0.41
+0.43*
+7%
+Neutrogena Spray Beach Defense Oil-Free Body
+Sunscreen Spray - SPF 100
+100 086800101444 35219E05 2021-11 Avobenzone 3%, Homosalate 15%, Octisalate 5%,
+Octocrylene 10%, Oxybenzone 6%
+0.41 8%
+Neutrogena Spray Ultra Sheer Weightless Sunscreen
+Spray, SPF 100+
+100+ 086800100416 29519E02 2021-09 Avobenzone 3%, Homosalate 15%, Octisalate 5%,
+Octocrylene 10%, Oxybenzone 6%
+0.37
+0.38*
+2%
+Banana Boat Spray UltraMist Deep Tanning Dry Oil
+Continuous Clear Spray SPF 4
+4 79656046632 200944022 2023-03 Homosalate3.0%, Octocrylene 1.0% 0.36 18%
+Banana Boat Spray Kids Max Protect & Play Sunscreen CSpray SPF 100
+100 079656050820 200273634 2022-12 Avobenzone 3%, Homosalate 10%, Octisalate 5%,
+Octocrylene 10%, Oxybenzone 6%
+0.19 11%
+Neutrogena Spray Ultra Sheer Weightless Sunscreen
+Spray, SPF 70
+70 086800100409 13019F84 2022-04 Avobenzone 3%, Homosalate 15%, Octisalate 5%,
+Octocrylene 4%, Oxybenzone 6%
+0.18 10%
+Neutrogena Spray Ultra Sheer Body Mist Sunscreen
+Broad Spectrum SPF 45
+45 086800100393 15719F83 2022-05 Avobenzone 3%, Homosalate 15%, Octisalate 5%,
+Octocrylene 2.35%, Oxybenzone 6%
+0.15 12%
+Banana Boat Spray Ultra Sport Clear Sunscreen Spray SPF
+100
+100 79656050806 201060792 2023-03 Avobenzone 3.0%, Homosalate 10.0%, Octisalate
+5.0%, Octocrylene 10.0%, Oxybenzone 6.0%
+0.15 4%
+Neutrogena Lotion Ultra Sheer Dry-Touch Water
+Resistant Sunscreen SPF 70
+70 86800687702 0090L0069 2022-06 Avobenzone 3.0%, Homosalate 15.0%, Octisalate
+5.0%, Octocrylene 2.8%, Oxybenzone 6.0%
+0.13 73%
+Neutrogena Spray CoolDry Sport Water-Resistant
+Sunscreen Spray SPF 50
+50 086800100362 15619F25 2022-05 Avobenzone 2.7%, Homosalate 9%, Octisalate
+4.5%, Octocrylene 6%, Oxybenzone 4.5%
+0.13 4%
+TopCare
+Everyday
+Lotion Ultimate Sheer Sunscreen Lotion SPF
+70
+70 036800459007 9533119A 2021-11 Avobenzone 3%, Homosalate 10%, Octisalate 3%,
+Octocrylene 7%, Oxybenzone 6%
+0.12
+0.16*
+6%
+EltaMD Spray UV Aero Broad-Spectrum Full-Body
+Sunscreen Spray, SPF 45
+45 390205025879 67155I 2022-11 Zinc Oxide 9.3%, Octinoxate 7.5% 0.11
+0.17*
+18%
+EltaMD Spray UV Aero Broad-Spectrum Full-Body
+Sunscreen Spray, SPF 45
+45 390205025879 67155H 2022-11 Zinc Oxide 9.3%, Octinoxate 7.5% 0.11 9%
+Banana Boat Spray Kids Max Protect & Play Sunscreen CSpray SPF 100
+100 079656050820 200243635 2022-12 Avobenzone 3%, Homosalate 10%, Octisalate 5%,
+Octocrylene 10%, Oxybenzone 6%
+0.11 19%
