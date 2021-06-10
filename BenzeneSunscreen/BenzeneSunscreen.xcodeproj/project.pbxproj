@@ -22,6 +22,9 @@
 		553E87D6266A7E7A000E0F12 /* MainSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87D5266A7E7A000E0F12 /* MainSearchTableViewCell.swift */; };
 		553E87D7266A7E7A000E0F12 /* MainSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87D5266A7E7A000E0F12 /* MainSearchTableViewCell.swift */; };
 		553E87D8266A7E7A000E0F12 /* MainSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87D5266A7E7A000E0F12 /* MainSearchTableViewCell.swift */; };
+		553E87DB266A8B45000E0F12 /* SunscreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87DA266A8B45000E0F12 /* SunscreenController.swift */; };
+		553E87DC266A8B45000E0F12 /* SunscreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87DA266A8B45000E0F12 /* SunscreenController.swift */; };
+		553E87DD266A8B45000E0F12 /* SunscreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E87DA266A8B45000E0F12 /* SunscreenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,7 @@
 		553E87CD266A7B66000E0F12 /* Sunscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sunscreen.swift; sourceTree = "<group>"; };
 		553E87D0266A7E33000E0F12 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		553E87D5266A7E7A000E0F12 /* MainSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchTableViewCell.swift; sourceTree = "<group>"; };
+		553E87DA266A8B45000E0F12 /* SunscreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunscreenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		553E87972666A440000E0F12 /* BenzeneSunscreen */ = {
 			isa = PBXGroup;
 			children = (
+				553E87D9266A8B28000E0F12 /* Model Controller */,
 				553E87D4266A7E63000E0F12 /* Views */,
 				553E87CF266A7E13000E0F12 /* View Controllers */,
 				553E87CC266A7B49000E0F12 /* Model */,
@@ -171,6 +176,14 @@
 				553E87D5266A7E7A000E0F12 /* MainSearchTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		553E87D9266A8B28000E0F12 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				553E87DA266A8B45000E0F12 /* SunscreenController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				553E87DB266A8B45000E0F12 /* SunscreenController.swift in Sources */,
 				553E87D6266A7E7A000E0F12 /* MainSearchTableViewCell.swift in Sources */,
 				553E87CE266A7B67000E0F12 /* Sunscreen.swift in Sources */,
 				553E87992666A440000E0F12 /* AppDelegate.swift in Sources */,
@@ -319,6 +333,7 @@
 			files = (
 				553E87D7266A7E7A000E0F12 /* MainSearchTableViewCell.swift in Sources */,
 				553E87B02666A447000E0F12 /* BenzeneSunscreenTests.swift in Sources */,
+				553E87DC266A8B45000E0F12 /* SunscreenController.swift in Sources */,
 				553E87D2266A7E33000E0F12 /* SearchTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +344,7 @@
 			files = (
 				553E87D8266A7E7A000E0F12 /* MainSearchTableViewCell.swift in Sources */,
 				553E87BB2666A447000E0F12 /* BenzeneSunscreenUITests.swift in Sources */,
+				553E87DD266A8B45000E0F12 /* SunscreenController.swift in Sources */,
 				553E87D3266A7E33000E0F12 /* SearchTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

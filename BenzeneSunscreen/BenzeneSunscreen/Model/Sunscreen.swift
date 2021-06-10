@@ -10,7 +10,6 @@ import UIKit
 
 
 struct Sunscreen: Codable {
-    
     let brandName: String
     let type: String
     let description: String

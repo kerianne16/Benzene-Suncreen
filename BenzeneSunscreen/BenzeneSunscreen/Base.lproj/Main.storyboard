@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oTG-hc-7PL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16097"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,19 +14,126 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="cYG-j5-t4M">
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" id="cYG-j5-t4M">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="141" id="BeC-dA-w08" customClass="MainSearchTableViewCell" customModule="BenzeneSunscreen" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="414" height="141"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sunscreenCell" rowHeight="355" id="BeC-dA-w08" customClass="MainSearchTableViewCell" customModule="BenzeneSunscreen" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="355"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BeC-dA-w08" id="0hu-io-AFt">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="141"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="355"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTD-0n-ph4">
+                                            <rect key="frame" x="20" y="59" width="38" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcG-mQ-X5a">
+                                            <rect key="frame" x="20" y="88" width="88" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pa1-gJ-6w3">
+                                            <rect key="frame" x="20" y="117" width="31" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQA-4I-aoG">
+                                            <rect key="frame" x="20" y="146" width="35" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUN-Gt-0Ov">
+                                            <rect key="frame" x="20" y="175" width="25" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zna-PI-vyZ">
+                                            <rect key="frame" x="20" y="204" width="76" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active Pharmacutical Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="se2-Hr-Imn">
+                                            <rect key="frame" x="20" y="233" width="251" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benzene Avg Ppm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tuc-e8-BpP">
+                                            <rect key="frame" x="20" y="268" width="139" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnr-LU-ScV">
+                                            <rect key="frame" x="20" y="304" width="60" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWU-Tb-0F2">
+                                            <rect key="frame" x="20" y="11" width="95" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="bnr-LU-ScV" firstAttribute="leading" secondItem="0hu-io-AFt" secondAttribute="leadingMargin" id="1OF-Ft-c8E"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Pa1-gJ-6w3" secondAttribute="trailing" id="1wU-oC-vCK"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="QUN-Gt-0Ov" secondAttribute="trailing" id="3dF-A9-Yfy"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Tuc-e8-BpP" secondAttribute="trailing" id="4CD-DO-4M3"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="mQA-4I-aoG" secondAttribute="trailing" id="6dC-nd-b4H"/>
+                                        <constraint firstItem="zna-PI-vyZ" firstAttribute="top" secondItem="QUN-Gt-0Ov" secondAttribute="bottom" constant="8" id="6ed-c1-7WU"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bTD-0n-ph4" secondAttribute="trailing" id="Ast-Tf-FUh"/>
+                                        <constraint firstItem="AcG-mQ-X5a" firstAttribute="leading" secondItem="0hu-io-AFt" secondAttribute="leadingMargin" id="DH7-Tb-UWA"/>
+                                        <constraint firstItem="bnr-LU-ScV" firstAttribute="top" secondItem="Tuc-e8-BpP" secondAttribute="bottom" constant="15" id="IdR-kf-Bvt"/>
+                                        <constraint firstItem="QUN-Gt-0Ov" firstAttribute="leading" secondItem="0hu-io-AFt" secondAttribute="leadingMargin" id="KaB-sH-hU3"/>
+                                        <constraint firstItem="Pa1-gJ-6w3" firstAttribute="top" secondItem="AcG-mQ-X5a" secondAttribute="bottom" constant="8" id="SuV-Mp-VvH"/>
+                                        <constraint firstItem="bTD-0n-ph4" firstAttribute="leading" secondItem="0hu-io-AFt" secondAttribute="leadingMargin" id="UgB-mT-TRb"/>
+                                        <constraint firstItem="Tuc-e8-BpP" firstAttribute="top" secondItem="se2-Hr-Imn" secondAttribute="bottom" constant="14" id="WLw-I5-uwz"/>
+                                        <constraint firstItem="CWU-Tb-0F2" firstAttribute="leading" secondItem="0hu-io-AFt" secondAttribute="leadingMargin" id="ZPQ-SI-Qh6"/>
+                                        <constraint firstItem="se2-Hr-Imn" firstAttribute="leading" secondItem="0hu-io-AFt" secondAttribute="leadingMargin" id="bJF-3o-gv6"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="CWU-Tb-0F2" secondAttribute="trailing" id="bea-HA-nLc"/>
+                                        <constraint firstItem="mQA-4I-aoG" firstAttribute="top" secondItem="Pa1-gJ-6w3" secondAttribute="bottom" constant="8" id="dnT-he-WoE"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="se2-Hr-Imn" secondAttribute="trailing" id="gBP-vd-akN"/>
+                                        <constraint firstItem="QUN-Gt-0Ov" firstAttribute="top" secondItem="mQA-4I-aoG" secondAttribute="bottom" constant="8" id="iLU-bQ-A44"/>
+                                        <constraint firstItem="se2-Hr-Imn" firstAttribute="top" secondItem="zna-PI-vyZ" secondAttribute="bottom" constant="8" id="icE-GN-XVh"/>
+                                        <constraint firstItem="bTD-0n-ph4" firstAttribute="top" secondItem="CWU-Tb-0F2" secondAttribute="bottom" constant="27" id="kHz-Qu-Epq"/>
+                                        <constraint firstItem="AcG-mQ-X5a" firstAttribute="top" secondItem="bTD-0n-ph4" secondAttribute="bottom" constant="8" id="m1t-8g-s9R"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="AcG-mQ-X5a" secondAttribute="trailing" id="nuH-mu-r60"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="bnr-LU-ScV" secondAttribute="bottom" constant="19" id="oRa-Yt-WgB"/>
+                                        <constraint firstItem="zna-PI-vyZ" firstAttribute="leading" secondItem="0hu-io-AFt" secondAttribute="leadingMargin" id="ore-ms-M3f"/>
+                                        <constraint firstItem="mQA-4I-aoG" firstAttribute="leading" secondItem="0hu-io-AFt" secondAttribute="leadingMargin" id="qvt-00-U6r"/>
+                                        <constraint firstItem="Pa1-gJ-6w3" firstAttribute="leading" secondItem="0hu-io-AFt" secondAttribute="leadingMargin" id="rA5-HL-IzQ"/>
+                                        <constraint firstItem="CWU-Tb-0F2" firstAttribute="top" secondItem="0hu-io-AFt" secondAttribute="topMargin" id="rLm-0q-0tt"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bnr-LU-ScV" secondAttribute="trailing" id="sCy-RT-nZa"/>
+                                        <constraint firstItem="Tuc-e8-BpP" firstAttribute="leading" secondItem="0hu-io-AFt" secondAttribute="leadingMargin" id="sad-ej-eEy"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="zna-PI-vyZ" secondAttribute="trailing" id="vBY-ET-sC7"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="activePharmacuticalIngredientsLabel" destination="se2-Hr-Imn" id="daS-bF-wpM"/>
+                                    <outlet property="benzeneAvgPpmLabel" destination="Tuc-e8-BpP" id="8gu-bJ-3TG"/>
+                                    <outlet property="brandNameLabel" destination="CWU-Tb-0F2" id="PYO-Rf-1Hg"/>
+                                    <outlet property="descriptionLabel" destination="AcG-mQ-X5a" id="P74-ex-NdP"/>
+                                    <outlet property="expirationLabel" destination="zna-PI-vyZ" id="CpO-Qr-Xmp"/>
+                                    <outlet property="lotLabel" destination="QUN-Gt-0Ov" id="iRP-nP-S1I"/>
+                                    <outlet property="percentLabel" destination="bnr-LU-ScV" id="1VE-BB-vF2"/>
+                                    <outlet property="spfLabel" destination="Pa1-gJ-6w3" id="0VP-LT-0Ag"/>
+                                    <outlet property="typeLabel" destination="bTD-0n-ph4" id="51h-tT-yWb"/>
+                                    <outlet property="upcLabel" destination="mQA-4I-aoG" id="KPh-8D-Ov4"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -34,10 +141,13 @@
                             <outlet property="delegate" destination="oTG-hc-7PL" id="dfV-3l-Fkg"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="searchBar" destination="cYG-j5-t4M" id="U0C-we-1Go"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mkz-8N-LBc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="227.536231884058" y="-245.08928571428569"/>
+            <point key="canvasLocation" x="309" y="-254"/>
         </scene>
     </scenes>
 </document>
