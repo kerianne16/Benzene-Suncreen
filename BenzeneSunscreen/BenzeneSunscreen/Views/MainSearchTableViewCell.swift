@@ -25,20 +25,12 @@ class MainSearchTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     
+    static let identifer: String = String(describing: MainSearchTableViewCell.self) // converting MainSearchTableViewCell into "MainSearchTableViewCell" (resuse identifer) in order to avoid raw strings throught the code 
+    
     var sunscreen: Sunscreen! {
         didSet {
             self.updateUI()
         }
-    }
-    
-    // MARK: - View Lifecycle
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
     }
     
     // MARK: - Update UI Func

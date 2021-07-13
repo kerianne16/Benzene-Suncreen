@@ -13,6 +13,7 @@ class SearchTableViewController: UITableViewController {
     // MARK: - Properties
     
     let data = SunscreenController().sunscreens
+   // var filteredData: [String]
     let sunscreenController = SunscreenController()
     
     // MARK: - Outlets
@@ -23,35 +24,47 @@ class SearchTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let data = SunscreenController().sunscreens
-        print(data)
+        //searchBar.delegate = self
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return data.count    }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "sunscreenCell", for: indexPath) as! MainSearchTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: MainSearchTableViewCell.identifer, for: indexPath) as! MainSearchTableViewCell
 
         let sunscreen = data[indexPath.item]
         cell.sunscreen = sunscreen
 
         return cell
     }
+//
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        // filteredData here is the result, data is the local array
+//        filteredData = searchText.isEmpty ? data : data.filter { (item: String) -> Bool in
+//            // If dataItem matches the searchText, return true to include it
+//            return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+//        }
+//        // Reload UI element as per your requirement
+//    }
+
+}
+
+extension SearchTableViewController: UISearchBarDelegate {
+
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+
+
+
+
+    }
+
 }
