@@ -35,7 +35,7 @@ class MainSearchTableViewCell: UITableViewCell {
     
     // MARK: - Update UI Func
     
-        func updateUI() {
+       private func updateUI() {
             if let sunscreen = sunscreen {
                 brandNameLabel.text = sunscreen.brandName
                 typeLabel.text = sunscreen.type
