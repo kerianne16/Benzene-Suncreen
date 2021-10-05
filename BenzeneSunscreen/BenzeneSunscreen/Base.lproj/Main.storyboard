@@ -54,7 +54,7 @@
             </objects>
             <point key="canvasLocation" x="24.637681159420293" y="-314.0625"/>
         </scene>
-        <!--Search Table View Controller-->
+        <!--Benzene -->
         <scene sceneID="6UZ-ex-RF7">
             <objects>
                 <tableViewController id="oTG-hc-7PL" customClass="SearchTableViewController" customModule="BenzeneSunscreen" customModuleProvider="target" sceneMemberID="viewController">
@@ -216,7 +216,7 @@
                             <outlet property="delegate" destination="oTG-hc-7PL" id="dfV-3l-Fkg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="F9s-Dh-Edi"/>
+                    <navigationItem key="navigationItem" title="Benzene " id="F9s-Dh-Edi"/>
                     <connections>
                         <outlet property="searchBar" destination="cYG-j5-t4M" id="U0C-we-1Go"/>
                     </connections>
