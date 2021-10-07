@@ -17,7 +17,7 @@ class SunscreenController {
            case delete = "DELETE"
        }
     var sunscreens = [Sunscreen]()
-    private var task: URLSessionTask?
+   // private var task: URLSessionTask?
 //
 //
 //    init() {
@@ -25,7 +25,7 @@ class SunscreenController {
 //    }
 
     func searchSunscreenData(searchTerm: String, completion: @escaping () -> Void) {
-        task?.cancel()
+        //task?.cancel()
          //finding the json file in the bundle
          if let jsonFile = Bundle.main.url(forResource: "sunscreens", withExtension: "json") {
 
@@ -40,6 +40,6 @@ class SunscreenController {
              }
             completion()
          }
-        task?.resume()
+        //task?.resume()
      }
 }

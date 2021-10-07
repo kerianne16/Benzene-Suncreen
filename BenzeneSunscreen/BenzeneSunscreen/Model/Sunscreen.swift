@@ -22,12 +22,12 @@ struct Sunscreen: Codable {
     let percent: String
     
     
-    func contains(query: String?) -> Bool {
-          guard let query = query else { return true }
-          guard !query.isEmpty else { return true }
-          let lowerCasedQuery = query.lowercased()
-        return brandName.lowercased().contains(lowerCasedQuery)
-      }
+//    func contains(query: String?) -> Bool {
+//          guard let query = query else { return true }
+//          guard !query.isEmpty else { return true }
+//          let lowerCasedQuery = query.lowercased()
+//        return brandName.lowercased().contains(lowerCasedQuery)
+//      }
 }
 
 

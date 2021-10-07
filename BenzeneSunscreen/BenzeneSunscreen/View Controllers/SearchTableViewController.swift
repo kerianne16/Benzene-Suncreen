@@ -13,8 +13,9 @@ class SearchTableViewController: UITableViewController {
     // MARK: - Properties
     
     private let sunscreenController = SunscreenController()
-    private lazy var dataSource = makeDataSource()
-    private var sunscreens: [Sunscreen] = []
+    private lazy var dataSource = makeDataSource() // dataSource for diffable tableview datasource
+    private var sunscreens: [Sunscreen] = [] // empty array to store sunscreen records
+    var searchResults: [Sunscreen] = [] // empty array to store search bar results
 
     enum Section {
         case main
@@ -40,6 +41,7 @@ class SearchTableViewController: UITableViewController {
             }
         }
     }
+    
 
     // MARK: - Table view data source
 
@@ -88,13 +90,39 @@ class SearchTableViewController: UITableViewController {
         
     }
     
-    private func perfromSearch(searchQuery: String?) {
-        let filteredSunscreens: [Sunscreen]
-        if let searchQuery = searchQuery, !searchQuery.isEmpty {
-            filteredSunscreens = sunscreens.filter { $0.contains(query: searchQuery) }
-        } else {
-            filteredSunscreens = sunscreenController.sunscreens
-        }
+    private func performSearch(_ searchQuery: String) {
+//        let filteredSunscreens: [Sunscreen]
+//        if let searchQuery = searchQuery, !searchQuery.isEmpty {
+//            filteredSunscreens = sunscreens.filter { $0.contains(query: searchQuery) }
+//        } else {
+//            filteredSunscreens = sunscreenController.sunscreens
+//        }
+//    }
+        
+        searchResults = sunscreens.filter({ (sunscreen:Sunscreen) -> Bool in
+            let brandNameMatch = sunscreen.brandName.range(of: searchQuery, options:
+                                                                NSString.CompareOptions.caseInsensitive)
+            let typeMatch = sunscreen.type.range(of: searchQuery, options:
+                                                    NSString.CompareOptions.caseInsensitive)
+            let descriptionMatch = sunscreen.description.range(of: searchQuery, options:
+                                                                NSString.CompareOptions.caseInsensitive)
+            let spfMatch = sunscreen.spf.range(of: searchQuery, options:
+                                                NSString.CompareOptions.caseInsensitive)
+            let upcMatch = sunscreen.upc.range(of: searchQuery, options:
+                                                NSString.CompareOptions.caseInsensitive)
+            let lotMatch = sunscreen.lot.range(of: searchQuery, options:
+                                                NSString.CompareOptions.caseInsensitive)
+            let expirationMatch = sunscreen.expiration.range(of: searchQuery, options:
+                                                                NSString.CompareOptions.caseInsensitive)
+            let activePharmacuticalIngredientsMatch = sunscreen.activePharmacuticalIngredients.range(of: searchQuery, options:
+                                                                                                        NSString.CompareOptions.caseInsensitive)
+            let benzeneAvgPpmMatch = sunscreen.benzeneAvgPpm.range(of: searchQuery, options:
+                                                                    NSString.CompareOptions.caseInsensitive)
+            let percentMatch = sunscreen.percent.range(of: searchQuery, options:
+                                                        NSString.CompareOptions.caseInsensitive)
+                                            return brandNameMatch != nil || typeMatch != nil || descriptionMatch != nil || spfMatch != nil || upcMatch != nil || lotMatch != nil || expirationMatch != nil || activePharmacuticalIngredientsMatch != nil || benzeneAvgPpmMatch != nil || percentMatch != nil}
+        )
+        
     }
 
 }
@@ -104,16 +132,42 @@ extension SearchTableViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchTerm = searchBar.text else { return }
         searchBar.resignFirstResponder()
-        searchWith(searchTerm: searchTerm)
+        performSearch(searchTerm)
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
             sunscreenController.sunscreens = []
             update()
-            return
-        }
-        searchWith(searchTerm: searchText)
+        } else {
+        searchResults = sunscreens.filter({ (sunscreen:Sunscreen) -> Bool in
+            let brandNameMatch = sunscreen.brandName.range(of: searchText, options:
+                                                                NSString.CompareOptions.caseInsensitive)
+            let typeMatch = sunscreen.type.range(of: searchText, options:
+                                                    NSString.CompareOptions.caseInsensitive)
+            let descriptionMatch = sunscreen.description.range(of: searchText, options:
+                                                                NSString.CompareOptions.caseInsensitive)
+            let spfMatch = sunscreen.spf.range(of: searchText, options:
+                                                NSString.CompareOptions.caseInsensitive)
+            let upcMatch = sunscreen.upc.range(of: searchText, options:
+                                                NSString.CompareOptions.caseInsensitive)
+            let lotMatch = sunscreen.lot.range(of: searchText, options:
+                                                NSString.CompareOptions.caseInsensitive)
+            let expirationMatch = sunscreen.expiration.range(of: searchText, options:
+                                                                NSString.CompareOptions.caseInsensitive)
+            let activePharmacuticalIngredientsMatch = sunscreen.activePharmacuticalIngredients.range(of: searchText, options:
+                                                                                                        NSString.CompareOptions.caseInsensitive)
+            let benzeneAvgPpmMatch = sunscreen.benzeneAvgPpm.range(of: searchText, options:
+                                                                    NSString.CompareOptions.caseInsensitive)
+            let percentMatch = sunscreen.percent.range(of: searchText, options:
+                                                        NSString.CompareOptions.caseInsensitive)
+                                            
+                                            return brandNameMatch != nil || typeMatch != nil || descriptionMatch != nil || spfMatch != nil || upcMatch != nil || lotMatch != nil || expirationMatch != nil || activePharmacuticalIngredientsMatch != nil || benzeneAvgPpmMatch != nil || percentMatch != nil}
+                                          
+        )
+//
+//        searchWith(searchTerm: searchText)
     }
 }
 
+}
