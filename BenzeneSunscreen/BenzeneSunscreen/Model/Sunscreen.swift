@@ -20,19 +20,4 @@ struct Sunscreen: Codable {
     let activePharmacuticalIngredients: String
     let benzeneAvgPpm: String
     let percent: String
-    
-    
-//    func contains(query: String?) -> Bool {
-//          guard let query = query else { return true }
-//          guard !query.isEmpty else { return true }
-//          let lowerCasedQuery = query.lowercased()
-//        return brandName.lowercased().contains(lowerCasedQuery)
-//      }
-}
-
-
-extension Sunscreen: Hashable { } // model needs to be hashable with using Diffable datasource in the tableview
-
-struct SunscreenSearch: Codable {
-    let results: [Sunscreen]
 }

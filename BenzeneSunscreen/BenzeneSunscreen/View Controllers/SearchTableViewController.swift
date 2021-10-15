@@ -11,163 +11,82 @@ import UIKit
 class SearchTableViewController: UITableViewController {
 
     // MARK: - Properties
+   
+    let searchController = UISearchController(searchResultsController: nil)
     
     private let sunscreenController = SunscreenController()
-    private lazy var dataSource = makeDataSource() // dataSource for diffable tableview datasource
     private var sunscreens: [Sunscreen] = [] // empty array to store sunscreen records
-    var searchResults: [Sunscreen] = [] // empty array to store search bar results
+    var filteredResults: [Sunscreen] = [] // empty array to store search bar results
 
-    enum Section {
-        case main
+    var isSearchBarEmpty: Bool {
+      return searchController.searchBar.text?.isEmpty ?? true
     }
     
-    // MARK: - Outlets
-    
-    @IBOutlet weak var searchBar: UISearchBar!
+    var isFiltering: Bool {
+      return searchController.isActive && !isSearchBarEmpty
+    }
     
     // MARK: - View Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchBar.delegate = self
-        tableView.dataSource = dataSource
-
+ 
+        sunscreens = sunscreenController.sunscreenData()
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        
     }
     
-    private func searchWith(searchTerm: String) {
-        sunscreenController.searchSunscreenData(searchTerm: searchTerm) {
-            DispatchQueue.main.async {
-                self.update()
-            }
-        }
+    func filterContentForSearchText(_ searchText: String) {
+      filteredResults = sunscreens.filter { (sunscreen: Sunscreen) -> Bool in
+        return sunscreen.brandName.lowercased().contains(searchText.lowercased())
+      }
+      
+      tableView.reloadData()
     }
-    
 
     // MARK: - Table view data source
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
-//
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return data.count    }
-//
-//
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: MainSearchTableViewCell.identifer, for: indexPath) as! MainSearchTableViewCell
-//
-//        let sunscreen = data[indexPath.item]
-//        cell.sunscreen = sunscreen
-//
-//        return cell
-//    }
-//
-//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        // filteredData here is the result, data is the local array
-//        filteredData = searchText.isEmpty ? data : data.filter { (item: String) -> Bool in
-//            // If dataItem matches the searchText, return true to include it
-//            return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
-//        }
-//        // Reload UI element as per your requirement
-//    }
-    private func makeDataSource() -> UITableViewDiffableDataSource<Section, Sunscreen> {
-        UITableViewDiffableDataSource(tableView: tableView) { (tableView, indexPath, sunscreen) in
-            let cell = tableView
-                .dequeueReusableCell(withIdentifier: MainSearchTableViewCell.identifer,
-                                     for: indexPath) as! MainSearchTableViewCell
-          
-            cell.sunscreen = sunscreen
-            return cell
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if isFiltering {
+            return filteredResults.count
         }
-        
+        return sunscreens.count
     }
-    
-    private func update() {
-        var snapshot = NSDiffableDataSourceSnapshot<Section, Sunscreen>()
-            snapshot.appendSections([.main])
-            snapshot.appendItems(sunscreenController.sunscreens)
-        dataSource.apply(snapshot, animatingDifferences: true)
-        
-    }
-    
-    private func performSearch(_ searchQuery: String) {
-//        let filteredSunscreens: [Sunscreen]
-//        if let searchQuery = searchQuery, !searchQuery.isEmpty {
-//            filteredSunscreens = sunscreens.filter { $0.contains(query: searchQuery) }
-//        } else {
-//            filteredSunscreens = sunscreenController.sunscreens
-//        }
-//    }
-        
-        searchResults = sunscreens.filter({ (sunscreen:Sunscreen) -> Bool in
-            let brandNameMatch = sunscreen.brandName.range(of: searchQuery, options:
-                                                                NSString.CompareOptions.caseInsensitive)
-            let typeMatch = sunscreen.type.range(of: searchQuery, options:
-                                                    NSString.CompareOptions.caseInsensitive)
-            let descriptionMatch = sunscreen.description.range(of: searchQuery, options:
-                                                                NSString.CompareOptions.caseInsensitive)
-            let spfMatch = sunscreen.spf.range(of: searchQuery, options:
-                                                NSString.CompareOptions.caseInsensitive)
-            let upcMatch = sunscreen.upc.range(of: searchQuery, options:
-                                                NSString.CompareOptions.caseInsensitive)
-            let lotMatch = sunscreen.lot.range(of: searchQuery, options:
-                                                NSString.CompareOptions.caseInsensitive)
-            let expirationMatch = sunscreen.expiration.range(of: searchQuery, options:
-                                                                NSString.CompareOptions.caseInsensitive)
-            let activePharmacuticalIngredientsMatch = sunscreen.activePharmacuticalIngredients.range(of: searchQuery, options:
-                                                                                                        NSString.CompareOptions.caseInsensitive)
-            let benzeneAvgPpmMatch = sunscreen.benzeneAvgPpm.range(of: searchQuery, options:
-                                                                    NSString.CompareOptions.caseInsensitive)
-            let percentMatch = sunscreen.percent.range(of: searchQuery, options:
-                                                        NSString.CompareOptions.caseInsensitive)
-                                            return brandNameMatch != nil || typeMatch != nil || descriptionMatch != nil || spfMatch != nil || upcMatch != nil || lotMatch != nil || expirationMatch != nil || activePharmacuticalIngredientsMatch != nil || benzeneAvgPpmMatch != nil || percentMatch != nil}
-        )
-        
-    }
-
-}
-
-extension SearchTableViewController: UISearchBarDelegate {
-
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        guard let searchTerm = searchBar.text else { return }
-        searchBar.resignFirstResponder()
-        performSearch(searchTerm)
-    }
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchText.isEmpty {
-            sunscreenController.sunscreens = []
-            update()
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: MainSearchTableViewCell.identifer, for: indexPath) as! MainSearchTableViewCell
+       
+        let sunscreen: Sunscreen
+        if isFiltering {
+            sunscreen = filteredResults[indexPath.row]
         } else {
-        searchResults = sunscreens.filter({ (sunscreen:Sunscreen) -> Bool in
-            let brandNameMatch = sunscreen.brandName.range(of: searchText, options:
-                                                                NSString.CompareOptions.caseInsensitive)
-            let typeMatch = sunscreen.type.range(of: searchText, options:
-                                                    NSString.CompareOptions.caseInsensitive)
-            let descriptionMatch = sunscreen.description.range(of: searchText, options:
-                                                                NSString.CompareOptions.caseInsensitive)
-            let spfMatch = sunscreen.spf.range(of: searchText, options:
-                                                NSString.CompareOptions.caseInsensitive)
-            let upcMatch = sunscreen.upc.range(of: searchText, options:
-                                                NSString.CompareOptions.caseInsensitive)
-            let lotMatch = sunscreen.lot.range(of: searchText, options:
-                                                NSString.CompareOptions.caseInsensitive)
-            let expirationMatch = sunscreen.expiration.range(of: searchText, options:
-                                                                NSString.CompareOptions.caseInsensitive)
-            let activePharmacuticalIngredientsMatch = sunscreen.activePharmacuticalIngredients.range(of: searchText, options:
-                                                                                                        NSString.CompareOptions.caseInsensitive)
-            let benzeneAvgPpmMatch = sunscreen.benzeneAvgPpm.range(of: searchText, options:
-                                                                    NSString.CompareOptions.caseInsensitive)
-            let percentMatch = sunscreen.percent.range(of: searchText, options:
-                                                        NSString.CompareOptions.caseInsensitive)
-                                            
-                                            return brandNameMatch != nil || typeMatch != nil || descriptionMatch != nil || spfMatch != nil || upcMatch != nil || lotMatch != nil || expirationMatch != nil || activePharmacuticalIngredientsMatch != nil || benzeneAvgPpmMatch != nil || percentMatch != nil}
-                                          
-        )
-//
-//        searchWith(searchTerm: searchText)
+            sunscreen = sunscreens[indexPath.row]
+        }
+        cell.brandNameLabel?.text = sunscreen.brandName
+        cell.typeLabel?.text = sunscreen.type
+        cell.descriptionLabel?.text = sunscreen.description
+        cell.spfLabel?.text = sunscreen.spf
+        cell.upcLabel?.text = sunscreen.upc
+        cell.lotLabel?.text = sunscreen.lot
+        cell.expirationLabel?.text = sunscreen.expiration
+        cell.activePharmacuticalIngredientsLabel?.text = sunscreen.activePharmacuticalIngredients
+        cell.benzeneAvgPpmLabel?.text = sunscreen.benzeneAvgPpm
+        cell.percentLabel?.text = sunscreen.percent
+
+        return cell
     }
 }
 
+extension SearchTableViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchBar = searchController.searchBar
+        filterContentForSearchText(searchBar.text!)
+    }
 }

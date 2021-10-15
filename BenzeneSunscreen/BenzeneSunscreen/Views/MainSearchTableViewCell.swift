@@ -25,30 +25,6 @@ class MainSearchTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     
-    static let identifer: String = String(describing: MainSearchTableViewCell.self) // converting MainSearchTableViewCell into "MainSearchTableViewCell" (resuse identifer) in order to avoid raw strings throught the code 
+    static let identifer: String = String(describing: MainSearchTableViewCell.self) // converting MainSearchTableViewCell into "MainSearchTableViewCell" (resuse identifer) in order to avoid raw strings throught the code
     
-    var sunscreen: Sunscreen! {
-        didSet {
-            self.updateUI()
-        }
-    }
-    
-    // MARK: - Update UI Func
-    
-       private func updateUI() {
-            if let sunscreen = sunscreen {
-                brandNameLabel.text = sunscreen.brandName
-                typeLabel.text = sunscreen.type
-                descriptionLabel.text = sunscreen.description
-                spfLabel.text = sunscreen.spf
-                upcLabel.text = sunscreen.upc
-                lotLabel.text = sunscreen.lot
-                expirationLabel.text = sunscreen.expiration
-                activePharmacuticalIngredientsLabel.text = sunscreen.activePharmacuticalIngredients
-                benzeneAvgPpmLabel.text = sunscreen.benzeneAvgPpm
-                percentLabel.text = sunscreen.percent
-                
-            }
-        }
-
 }

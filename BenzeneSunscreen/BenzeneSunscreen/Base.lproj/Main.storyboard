@@ -62,14 +62,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" id="cYG-j5-t4M">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainSearchTableViewCell" rowHeight="355" id="BeC-dA-w08" customClass="MainSearchTableViewCell" customModule="BenzeneSunscreen" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="68.5" width="414" height="355"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="355"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BeC-dA-w08" id="0hu-io-AFt">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="355"/>
@@ -217,9 +212,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Benzene " id="F9s-Dh-Edi"/>
-                    <connections>
-                        <outlet property="searchBar" destination="cYG-j5-t4M" id="U0C-we-1Go"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mkz-8N-LBc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
