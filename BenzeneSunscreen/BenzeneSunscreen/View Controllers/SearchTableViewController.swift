@@ -42,7 +42,7 @@ class SearchTableViewController: UITableViewController {
     
     func filterContentForSearchText(_ searchText: String) {
       filteredResults = sunscreens.filter { (sunscreen: Sunscreen) -> Bool in
-        return sunscreen.brandName.lowercased().contains(searchText.lowercased())
+        return sunscreen.brandName.lowercased().contains(searchText.lowercased())  //sunscreen.description.lowercased().contains(searchText.lowercased())
       }
       
       tableView.reloadData()

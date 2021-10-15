@@ -23,6 +23,23 @@ class MainSearchTableViewCell: UITableViewCell {
     @IBOutlet weak var benzeneAvgPpmLabel: UILabel!
     @IBOutlet weak var percentLabel: UILabel!
     
+    @IBOutlet weak var containerView: UIView! {
+        didSet {
+            // Make the cell have a card appearance
+            containerView.backgroundColor = UIColor.clear
+            containerView.layer.shadowOpacity = 1
+            containerView.layer.shadowRadius = 2
+            containerView.layer.shadowColor = UIColor(named: "DarkBlue")?.cgColor
+            containerView.layer.shadowOffset = CGSize(width: 3, height: 3 )
+        }
+    }
+    @IBOutlet weak var clippingView: UIView! {
+        didSet {
+            clippingView.layer.cornerRadius = 10
+            clippingView.backgroundColor = UIColor.white
+            clippingView.layer.masksToBounds = true
+        }
+    }
     // MARK: - Properties
     
     static let identifer: String = String(describing: MainSearchTableViewCell.self) // converting MainSearchTableViewCell into "MainSearchTableViewCell" (resuse identifer) in order to avoid raw strings throught the code
