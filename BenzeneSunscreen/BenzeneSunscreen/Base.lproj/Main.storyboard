@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bam-Fn-YGW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UQ7-z9-DHI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Learn-->
         <scene sceneID="M7v-kh-wRN">
             <objects>
                 <viewController id="uiu-vI-blP" sceneMemberID="viewController">
@@ -49,10 +49,11 @@
                         <viewLayoutGuide key="safeArea" id="vcq-6M-0hn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Learn" image="heart" catalog="system" selectedImage="heart" id="Yku-CA-dnj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LiC-8O-3ew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.637681159420293" y="-314.0625"/>
+            <point key="canvasLocation" x="2186" y="506"/>
         </scene>
         <!--Benzene -->
         <scene sceneID="6UZ-ex-RF7">
@@ -81,27 +82,27 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="22" id="6ya-da-uf4"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSC-fq-ARN">
-                                                            <rect key="frame" x="8" y="46" width="36" height="20"/>
+                                                            <rect key="frame" x="8" y="46" width="36.5" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="81U-Su-GGt"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeW-aX-q69">
-                                                            <rect key="frame" x="8" y="74" width="84" height="20"/>
+                                                            <rect key="frame" x="8" y="74" width="83.5" height="19.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mdk-du-niS">
-                                                            <rect key="frame" x="8" y="102" width="29" height="20"/>
+                                                            <rect key="frame" x="8" y="101.5" width="29" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="ztj-78-nQU"/>
                                                             </constraints>
@@ -110,7 +111,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pks-fV-AG6">
-                                                            <rect key="frame" x="8" y="130" width="33" height="20"/>
+                                                            <rect key="frame" x="8" y="129.5" width="33" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="hJh-pt-Jca"/>
                                                             </constraints>
@@ -119,7 +120,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZ2-aD-hWG">
-                                                            <rect key="frame" x="8" y="158" width="24" height="20"/>
+                                                            <rect key="frame" x="8" y="157.5" width="24" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="9cJ-Bp-fPh"/>
                                                             </constraints>
@@ -128,7 +129,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyX-Sw-maO">
-                                                            <rect key="frame" x="8" y="186" width="72" height="20"/>
+                                                            <rect key="frame" x="8" y="185.5" width="72" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="vdH-fN-aVV"/>
                                                             </constraints>
@@ -137,7 +138,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active Pharmacutical Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goF-KL-QAb">
-                                                            <rect key="frame" x="8" y="214" width="238" height="27"/>
+                                                            <rect key="frame" x="8" y="213.5" width="238" height="27.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="lqK-jh-g4V"/>
                                                             </constraints>
@@ -146,9 +147,9 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Percent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Oi-pv-UO1">
-                                                            <rect key="frame" x="8" y="279" width="56" height="20"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                            <nil key="textColor"/>
+                                                            <rect key="frame" x="8" y="279" width="60.5" height="20"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                            <color key="textColor" systemColor="systemRedColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benzene Avg PPM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h38-BL-wvi">
@@ -166,7 +167,7 @@
                                                         <constraint firstItem="Pks-fV-AG6" firstAttribute="leading" secondItem="wnG-Lu-WCn" secondAttribute="leading" constant="8" id="0if-cf-yAF"/>
                                                         <constraint firstItem="goF-KL-QAb" firstAttribute="top" secondItem="lyX-Sw-maO" secondAttribute="bottom" constant="8" id="2m8-Qt-fEU"/>
                                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Pks-fV-AG6" secondAttribute="trailing" id="3UZ-5Q-Yyo"/>
-                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Oi-pv-UO1" secondAttribute="trailing" constant="318" id="3rj-mY-CDH"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Oi-pv-UO1" secondAttribute="trailing" id="3rj-mY-CDH"/>
                                                         <constraint firstItem="1Oi-pv-UO1" firstAttribute="top" secondItem="h38-BL-wvi" secondAttribute="bottom" constant="8" id="4hw-Le-c6B"/>
                                                         <constraint firstItem="lyX-Sw-maO" firstAttribute="top" secondItem="fZ2-aD-hWG" secondAttribute="bottom" constant="8" id="6vl-oM-JmM"/>
                                                         <constraint firstItem="qD8-2R-uJ4" firstAttribute="leading" secondItem="wnG-Lu-WCn" secondAttribute="leading" constant="8" id="D5K-5E-pbl"/>
@@ -238,30 +239,55 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mkz-8N-LBc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2024.6376811594205" y="-241.07142857142856"/>
+            <point key="canvasLocation" x="3844.9275362318845" y="-241.07142857142856"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Os0-yd-0Zz">
+        <!--Tab Bar Controller-->
+        <scene sceneID="IhJ-5d-gW7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bam-Fn-YGW" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UQ7-z9-DHI" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mqR-Pg-o2T">
+                    <navigationItem key="navigationItem" id="RY3-we-fCf"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qba-jo-og1">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aFj-Ay-4Kg" kind="relationship" relationship="viewControllers" id="7d9-wG-rS6"/>
+                        <segue destination="uiu-vI-blP" kind="relationship" relationship="viewControllers" id="kOO-tQ-46o"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ihU-mW-W2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1936" y="-241"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="jka-EV-0cJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aFj-Ay-4Kg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="XRP-eF-eKm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="soq-FZ-KxE">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="oTG-hc-7PL" kind="relationship" relationship="rootViewController" id="jTs-sY-PK7"/>
+                        <segue destination="oTG-hc-7PL" kind="relationship" relationship="rootViewController" id="8K4-jZ-oXZ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yfe-mD-2bz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5I-Nh-Ipu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1005.7971014492755" y="-260.49107142857144"/>
+            <point key="canvasLocation" x="2934.7826086956525" y="-241.07142857142856"/>
         </scene>
     </scenes>
     <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

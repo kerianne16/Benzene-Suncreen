@@ -37,16 +37,20 @@ class SearchTableViewController: UITableViewController {
         searchController.searchBar.placeholder = "Search"
         navigationItem.searchController = searchController
         definesPresentationContext = true
-        
     }
     
     func filterContentForSearchText(_ searchText: String) {
-      filteredResults = sunscreens.filter { (sunscreen: Sunscreen) -> Bool in
-        return sunscreen.brandName.lowercased().contains(searchText.lowercased())  //sunscreen.description.lowercased().contains(searchText.lowercased())
+      filteredResults = sunscreens.filter({ (sunscreen: Sunscreen) -> Bool in
+        let brandNameMatch = sunscreen.brandName.range(of: searchText, options: NSString.CompareOptions.caseInsensitive)
+        let typeMatch = sunscreen.type.range(of: searchText, options: NSString.CompareOptions.caseInsensitive)
+        let lotMatch = sunscreen.lot.range(of: searchText, options: NSString.CompareOptions.caseInsensitive)
+        
+        return brandNameMatch != nil || typeMatch != nil || lotMatch != nil}
+      )
+        tableView.reloadData()
+        //sunscreen.brandName.lowercased().contains(searchText.lowercased())
       }
-      
-      tableView.reloadData()
-    }
+
 
     // MARK: - Table view data source
 
@@ -78,7 +82,7 @@ class SearchTableViewController: UITableViewController {
         cell.expirationLabel?.text = sunscreen.expiration
         cell.activePharmacuticalIngredientsLabel?.text = sunscreen.activePharmacuticalIngredients
         cell.benzeneAvgPpmLabel?.text = sunscreen.benzeneAvgPpm
-        cell.percentLabel?.text = sunscreen.percent
+        cell.percentLabel?.text = "Total Benzene: \(sunscreen.percent)"
 
         return cell
     }
