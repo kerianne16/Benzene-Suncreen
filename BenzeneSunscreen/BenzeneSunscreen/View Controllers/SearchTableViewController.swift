@@ -83,6 +83,7 @@ class SearchTableViewController: UITableViewController {
         cell.activePharmacuticalIngredientsLabel?.text = sunscreen.activePharmacuticalIngredients
         cell.benzeneAvgPpmLabel?.text = sunscreen.benzeneAvgPpm
         cell.percentLabel?.text = "Total Benzene: \(sunscreen.percent)"
+        cell.productImageView.image = UIImage(named: sunscreen.description)
 
         return cell
     }
