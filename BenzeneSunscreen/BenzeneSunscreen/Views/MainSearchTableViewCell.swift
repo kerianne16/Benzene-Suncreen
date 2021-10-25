@@ -10,10 +10,14 @@ import UIKit
 
 class MainSearchTableViewCell: UITableViewCell {
 
+    // MARK: - Properties
+    
+    static let identifer: String = String(describing: MainSearchTableViewCell.self) // converting MainSearchTableViewCell into "MainSearchTableViewCell" (resuse identifer) in order to avoid raw strings throught the code
+    var sunscreen: Sunscreen?
+    
     // MARK: - Outlets
         
     @IBOutlet weak var productImageView: UIImageView!
-     
     @IBOutlet weak var brandNameLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -43,15 +47,5 @@ class MainSearchTableViewCell: UITableViewCell {
         }
     }
     
-//    func setProductImage() {
-//       if let sunscreen = sunscreen,
-//          let productImage = productImageView {
-//        productImage.image = UIImage(named: sunscreen.description)
-//       }
-//    }
-    // MARK: - Properties
-    
-    static let identifer: String = String(describing: MainSearchTableViewCell.self) // converting MainSearchTableViewCell into "MainSearchTableViewCell" (resuse identifer) in order to avoid raw strings throught the code
-    var sunscreen: Sunscreen?
-    
 }
+

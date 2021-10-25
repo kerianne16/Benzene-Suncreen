@@ -87,6 +87,25 @@ class SearchTableViewController: UITableViewController {
 
         return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      guard
+        segue.identifier == "showDetailViewSegue",
+        let indexPath = tableView.indexPathForSelectedRow,
+        let detailViewController = segue.destination as? DetailViewController
+        else {
+          return
+      }
+      
+      let sunscreen: Sunscreen
+      if isFiltering {
+        sunscreen = filteredResults[indexPath.row]
+      } else {
+        sunscreen = sunscreens[indexPath.row]
+      }
+      detailViewController.sunscreen = sunscreen
+    }
+
+
 }
 
 extension SearchTableViewController: UISearchResultsUpdating {
